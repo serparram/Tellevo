@@ -12,21 +12,21 @@ export class ViajesService {
   constructor( public http: HttpClient,) {
    }
    getAllViajes() {
-    const path = `${this.api}/viajes/`;
+    const path = `${this.api}`;
     return this.http.get<Viajes[]>(path);
   }
 
   getViaje(id: string) {
-    const path = `${this.api}/viajes/${id}`;
+    const path = `${this.api}${id}`;
     return this.http.get<Viajes>(path);
   }
 
   createViaje(viaje: Viajes) {
-    const path = `${this.api}/viajes`;
+    const path = `${this.api}`;
     return this.http.post(path, viaje);
   }
   deleteViaje(id: string) {
-    const path = `${this.api}/viajes/${id}`;
+    const path = `${this.api}${id}`;
     return this.http.delete(path);
   }
 }
