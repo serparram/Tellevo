@@ -99,7 +99,7 @@ destination = { lat: -33.00833299229633, lng: -71.54804898052983 }; // Mall Mari
 
   }
 postViaje(){
-  let url = "http://localhost:3000/viajes"
+  let url = "https://raw.githubusercontent.com/serparram/Tellevo/main/db.json"
   this.http.post(url,{
     iniciov:this.iniciov,
     finalv:this.finalv,
