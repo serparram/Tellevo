@@ -7,7 +7,7 @@ import { Viajes } from './../interfaces/viajes';
   providedIn: 'root'
 })
 export class ViajesService {
-  private api = 'http://localhost:3000';
+  private api = 'https://raw.githubusercontent.com/serparram/Tellevo/main/db.json';
 
   constructor( private http: HttpClient,) {
    }
