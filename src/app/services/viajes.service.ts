@@ -7,9 +7,9 @@ import { Viajes } from './../interfaces/viajes';
   providedIn: 'root'
 })
 export class ViajesService {
-  private api = 'https://raw.githubusercontent.com/serparram/Tellevo/main/db.json';
+  public api = 'https://raw.githubusercontent.com/serparram/Tellevo/main/db.json';
 
-  constructor( private http: HttpClient,) {
+  constructor( public http: HttpClient,) {
    }
    getAllViajes() {
     const path = `${this.api}/viajes/`;
