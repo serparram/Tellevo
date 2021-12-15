@@ -94,7 +94,7 @@ horasa:Time;
     }
     
 buscarViajes(){
-  this.viajesService.getAllViajes2()
+  this.viajesService.getAllViajes()
   .subscribe( viajes =>{
     console.log(viajes);
     this.viajes = viajes;
