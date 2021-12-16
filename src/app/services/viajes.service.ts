@@ -8,7 +8,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class ViajesService {
-  private api = 'https://raw.githubusercontent.com/erpantoja/-TeLlevo/main/db.json';
+  private api = 'https://raw.githubusercontent.com/serparram/Tellevo/main/db.json';
 
   constructor( private http: HttpClient,) {
    }
