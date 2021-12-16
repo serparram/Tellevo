@@ -40,6 +40,6 @@ export class ViajesService {
     return this.http.get<Viajes[]>(path) 
     
   }
-  data= Object.values(this.getAllViajes2)
+  data= Object.values(this.getAllViajes)
 }
 
